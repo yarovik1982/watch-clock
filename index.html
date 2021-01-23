@@ -9,47 +9,49 @@
 	<link rel="stylesheet" href="css/reset-style.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-item">
-				<div class="header-item__top">
-					<div class="header-item__logo">Black Pink</div>
-					
-					<ul class="header-item__menu">
-						<li class="header-item__menu-item"><a class="menu-item__link" href="#">Доставка и Оплата</a></li>
-						<li class="header-item__menu-item"><a class="menu-item__link" href="#">Гарантия</a></li>
-						<li class="header-item__menu-item"><a class="menu-item__link" href="#">Магазины</a></li>
-						<li class="header-item__menu-item"><a class="menu-item__link" href="#">Отзывы</a></li>
-						<li class="header-item__menu-item"><a class="menu-item__link" href="#">Контакты</a></li>
-					</ul>
-					<div class="header-item__menu-btns">
-						<button class="header-item__menu-login" type="submit">Войти</button>
-						<input type="text" class="header-item__menu-search" placeholder="Поиск">
+			<div class="header__wrapper">
+				<div class="header__top">
+					<div class="header__top-logo">Black Pink</div>
+						
+						<ul class="header__top-menu">
+							<li class="header__top-menu_item"><a class="top-menu__link" href="#">Доставка и Оплата</a></li>
+							<li class="header__top-menu_item"><a class="top-menu__link" href="#">Гарантия</a></li>
+							<li class="header__top-menu_item"><a class="top-menu__link" href="#">Магазины</a></li>
+							<li class="header__top-menu_item"><a class="top-menu__link" href="#">Отзывы</a></li>
+							<li class="header__top-menu_item"><a class="top-menu__link" href="#">Контакты</a></li>
+						</ul>
+					<div class="header__top-menu_btns">
+						<button class="menu_btns__login" type="submit">Войти</button>
+						<input class="menu_btns__search" type="text" placeholder="Поиск">
 					</div>
-					<div class="header-item__tel">
-						<a class="header-item__tel-num" href="#">+ (371) 278-357-79</a>
-						<a class="header-item__tel-link" href="#">Заказать звонок!</a>
+					<div class="header__top-menu_tel">
+						<a class="header__top-menu_tel-num" href="#">+ (371) 278-357-79</a>
+						<a class="header__top-menu_tel-link" href="#">Заказать звонок!</a>
 					</div>
 				</div>
-				<div class="header-item__bottom">
-					<div class="header-item__bottom-burger">
-						<span class="header-item__bottom-line"></span>
+				<div class="header__bottom">
+					<div class="header__bottom-burger">
+						<span class="header__bottom-burger_line"></span>
 					</div>
-					<a class="header-item__bottom-catalog" href="#">Каталог</a>
-					<div class="header-item__bottom-inner">
-						<ul class="header-item__bottom-categories">
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">Iphone</a></li>
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">Ipad</a></li>
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">MacBook и IMac</a></li>
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">Watch</a></li>
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">Аксессуары</a></li>
-							<li class="header-item__bottom-categories_item"><a class="header-item__bottom-categories_link" href="#">Акции</a></li>
+					<a class="header__bottom-catalog" href="#">Каталог</a>
+					<div class="header__bottom-inner">
+						<ul class="header__bottom-categories">
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">Iphone</a></li>
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">Ipad</a></li>
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">MacBook и IMac</a></li>
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">Watch</a></li>
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">Аксессуары</a></li>
+							<li class="header__bottom-categories_item"><a class="header__bottom-categories_link" href="#">Акции</a></li>
 						</ul>
-						<div class="header-item__bottom-categories_basket">Корзина</div>
+						<div class="header__bottom-categories_basket">Корзина</div>
 					</div>
-					<p class="header-item__bottom-categories_info">Ежедневно<br>
+					<p class="header__bottom-categories_info">Ежедневно<br>
 						с 07:00 по 22:00</p>
 				</div>
 			</div>
@@ -60,7 +62,8 @@
 			<div class="container">
 				<div class="first__slider-inner">
 					<div class="first__slider-inner__img">
-						<img class="first__slider-inner__img-img" src="images/apple_iphone-12.png" alt="">
+						<img class="first__slider-inner__img-img-1 img-active" id="img-1" src="images/apple_iphone-12.png" alt="">
+						<img class="first__slider-inner__img-img-1" id="img-2" src="images/AppleWatchSeries5.png" alt="">
 					</div>
 					<div class="first__slider-inner__content">
 						<h1 class="first__slider-inner__content-title">
@@ -72,11 +75,11 @@
 						</h6>
 						<button class="first__slider-inner__content-btn">В каталог</button>
 						<div class="first__slider-inner__content-pagination">
-							<div class="first__slider-inner__content-pagination_dote"></div>
-							<div class="first__slider-inner__content-pagination_dote"></div>
-							<div class="first__slider-inner__content-pagination_dote"></div>
-							<div class="first__slider-inner__content-pagination_dote"></div>
-							<div class="first__slider-inner__content-pagination_dote"></div>
+							<div class="dote first__slider-inner__content-pagination_dote dote-active" href="#img-1"></div>
+							<div class="dote first__slider-inner__content-pagination_dote" href="#img-2"></div>
+							<div class="dote first__slider-inner__content-pagination_dote"></div>
+							<div class="dote first__slider-inner__content-pagination_dote"></div>
+							<div class="dote first__slider-inner__content-pagination_dote"></div>
 						</div>
 					</div>
 				</div>
@@ -100,13 +103,6 @@
 							На страже твоего здоровья. Уже в наличии по самой низкой  цене.
 						</h6>
 						<button class="first__slider-inner__content-btn second-slider">В каталог</button>
-						<!-- <div class="first__slider-inner__content-pagination second-slider">
-							<div class="first__slider-inner__content-pagination_dote second-slider"></div>
-							<div class="first__slider-inner__content-pagination_dote second-slider"></div>
-							<div class="first__slider-inner__content-pagination_dote second-slider"></div>
-							<div class="first__slider-inner__content-pagination_dote second-slider"></div>
-							<div class="first__slider-inner__content-pagination_dote second-slider"></div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -182,6 +178,120 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="products-categories">
+		<div class="container">
+			<h3 class="products-categories__title">
+				Что вы ищете?
+			</h3>
+			<div class="product-catrgories__wrapper">
+				<div class="products-categories__row">
+					<div class="products-categories__row-wrap">
+						<div class="products-categories__row-item">
+							<div class="products-categories__row-title">
+								<div class="products-categories__row-title_wrap">
+									<div class="products-categories__row_top">
+										<h2 class="products-categories__row-title_title">
+											Смартфоны
+										</h2>
+										<h3 class="products-categories__row-title_subtitle">
+											IPhone
+										</h3>
+									</div>
+									<div class="products-categories__row_bottom">
+										<a class="products-categories__link-more" href="#">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-categories__row-img">
+								<img class="products-categories__img" src="..\images\categories-product-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="products-categories__row-wrap">
+						<div class="products-categories__row-item">
+							<div class="products-categories__row-title">
+								<div class="products-categories__row-title_wrap">
+									<div class="products-categories__row_top">
+										<h2 class="products-categories__row-title_title">
+											Планшеты
+										</h2>
+										<h3 class="products-categories__row-title_subtitle">
+											IPad
+										</h3>
+									</div>
+									<div class="products-categories__row_bottom">
+										<a class="products-categories__link-more" href="#">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-categories__row-img">
+								<img class="products-categories__img" src="../images/categories-product-2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products-categories__row">
+					<div class="products-categories__row-wrap">
+
+						<div class="products-categories__row-item">
+							<div class="products-categories__row-title">
+								<div class="products-categories__row-title_wrap">
+									<div class="products-categories__row_top">
+										<h2 class="products-categories__row-title_title">
+											Смартфоны
+										</h2>
+										<h3 class="products-categories__row-title_subtitle">
+											IPhone
+										</h3>
+									</div>
+									<div class="products-categories__row_bottom">
+										<a class="products-categories__link-more" href="#">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-categories__row-img">
+								<img class="products-categories__img" src="../images/categories-product-1.png" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="products-categories__row-wrap">
+						<div class="products-categories__row-item">
+							<div class="products-categories__row-title">
+								<div class="products-categories__row-title_wrap">
+									<div class="products-categories__row_top">
+										<h2 class="products-categories__row-title_title">
+											Компьтеры
+										</h2>
+										<h3 class="products-categories__row-title_subtitle">
+											Mac
+										</h3>
+									</div>
+									<div class="products-categories__row_bottom">
+										<a class="products-categories__link-more" href="#">
+											Подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-categories__row-img">
+								<img class="products-categories__img" src="../images/categories-product-5.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/mine.js"></script> 
 </body>
 
 </html>

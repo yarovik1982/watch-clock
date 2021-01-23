@@ -2,13 +2,62 @@
 @media only screen and (max-width : 1680px) {} 
 @media only screen and (max-width : 1366px) {} 
 @media only screen and (max-width : 1280px) {} 
-@media only screen and (max-width : 1024px) {} 
-@media only screen and (max-width : 800px) {} 
-@media only screen and (max-width : 768px) {} 
-@media only screen and (max-width : 600px) {} 
-@media only screen and (max-width : 533px) {} 
-@media only screen and (max-width : 360px) {} 
-@media only screen and (max-width : 320px) {} 
+@media screen and (max-width : 1024px) {
+    .container{
+        max-width: 1004px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+} 
+@media  screen and (max-width : 800px) {
+    .container{
+        max-width: 780px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+} 
+@media  screen and (max-width : 768px) {
+    .container{
+        max-width: 748px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+} 
+@media screen and (max-width : 600px) {
+    .container{
+        max-width: 580px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+} 
+@media  screen and (max-width : 533px) {
+    .container{
+        max-width: 513px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+} 
+@media  screen and (max-width : 360px) {
+    .container{
+        max-width: 340px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+} 
+@media  screen and (max-width : 320px) {
+    .container{
+        max-width: 300px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .products__cards{
+        width:100%;
+    }
+    .products__cards-img{
+        
+    }
+} 
 @media only screen and (max-width : 240px) {} 
 @media only screen and (max-width : 176px) {}
 
